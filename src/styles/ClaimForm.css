@@ -113,18 +113,29 @@ textarea {
   font-size: 1rem;
 }
 
-/* Fix select placeholder alignment */
 .icon_field select {
   border: none;
   background: transparent;
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  padding-left: 0;         /* Fixes alignment */
-  appearance: none;        /* Removes default dropdown icon */
+  padding-left: 0;         
+  appearance: none;        
   width: 100%;
 }
+.underline{
+  text-decoration: underline;
+}
+.checkbox_group label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
 
-/* Extra tweak to vertically align placeholder with border-bottom */
+.checkbox_group label span {
+  display: inline; 
+  line-height: 1.4;
+}
+
 .icon_field {
   display: flex;
   align-items: center;
@@ -134,14 +145,12 @@ textarea {
   font-size: 20px;
 }
 
-/* Uniform vertical spacing */
 .form_row,
 .text_area,
 .custom_input {
   gap: 1rem;
 }
 
-/* Button visibility control */
 .desktop_btn {
   display: block;
 }

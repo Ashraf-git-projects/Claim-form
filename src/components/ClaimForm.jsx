@@ -53,16 +53,19 @@ export default function ClaimForm() {
           <textarea placeholder="Tell us your story (optional)" />
         </div>
            </div>
-        <div className="checkbox_group">
-          <label>
-            <input type="checkbox" />
-            I agree to the privacy policy and disclaimer and give my express written consent to be contacted regarding my case options. I understand that I may be contacted using automatic dialing equipment. Message and data rates may apply. My consent does not require purchase. This is Legal advertising.
-          </label>
-          <label>
-            <input type="checkbox" />
-            Please check this box to verify you're a person.
-          </label>
-        </div>
+       <div className="checkbox_group">
+  <label>
+    <input type="checkbox" />
+    <span>
+      I agree to the <span className="underline">privacy policy</span> and <span className="underline">disclaimer</span> and give my express written consent to be contacted regarding my case options. I understand that I may be contacted using automatic dialing equipment. Message and data rates may apply. My consent does not require purchase. This is Legal advertising.
+    </span>
+  </label>
+
+  <label>
+    <input type="checkbox" />
+    <span>Please check this box to verify you're a person.</span>
+  </label>
+</div>
 
         <div className="submit_btn_group">
   {/* Desktop button */}
