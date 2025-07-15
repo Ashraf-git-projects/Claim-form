@@ -1,0 +1,83 @@
+.contact_content {
+  position: relative;
+  width: 510px;
+  height: 480px;
+  background: rgb(255, 255, 248);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Banner appears above everything */
+.contact_content .banner_container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.circle_badge {
+  position: absolute;
+  top: 95px;
+  left: 110px; /* adjust to reveal only right half */
+  width: 295px;
+  height: 295px;
+  background: radial-gradient(circle, #725ba2, #32205d);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(15deg);
+  z-index: 1; /* ensure it's behind Banner */
+}
+
+.circle_text {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  transform: rotate(-15deg); /* undo parent rotation */
+}
+
+/* ✅ Help text top right */
+.help_text {
+  position: absolute;
+  top: 55px;
+  right: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  text-align: right;
+  z-index: 3;
+}
+
+/* 📞 Contact Buttons */
+.contact_btn_wrapper {
+  z-index: 3;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: end;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.contact_btn,
+.arrow_btn {
+  background-color: #d6b38b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+.arrow_btn {
+  padding: 0.8rem;
+  border-radius: 50%;
+}

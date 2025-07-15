@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0%;
+      font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;        /* Full width of the viewport */
+  height: 100vh;       /* Full height of the viewport */
+  object-fit:fill;   /* Ensures the image covers entire area without stretching */
+  z-index: -1;         /* Sends it to background */
+}
+.comp_layout{
+  padding: 30px 150px 10px 150px;
+  display: flex;
+  gap: 20px;
+  
+}
+.lft_part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

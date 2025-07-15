@@ -1,0 +1,10 @@
+.details_container{
+  width: 510px;
+  height: auto;
+  background-color: rgb(255, 255, 248);
+  border-radius: 30px;
+   padding: 5px 20px 2px;
+}
+.details_container h2 {
+  color: rgb(39, 16, 61);
+}
