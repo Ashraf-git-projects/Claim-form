@@ -76,13 +76,6 @@ textarea {
   flex: 1;
 }
 
-.icon_field {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid white;
-  padding-right: 8px;
-}
-
 .icon_field input,
 .icon_field select {
   border: none;
@@ -118,4 +111,82 @@ textarea {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+/* Fix select placeholder alignment */
+.icon_field select {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding-left: 0;         /* Fixes alignment */
+  appearance: none;        /* Removes default dropdown icon */
+  width: 100%;
+}
+
+/* Extra tweak to vertically align placeholder with border-bottom */
+.icon_field {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-right: 8px;
+  height: 35px;
+  font-size: 20px;
+}
+
+/* Uniform vertical spacing */
+.form_row,
+.text_area,
+.custom_input {
+  gap: 1rem;
+}
+
+/* Button visibility control */
+.desktop_btn {
+  display: block;
+}
+
+.mobile_btn {
+  display: none;
+}
+
+/* 🎯 Mobile Styles */
+@media (max-width: 768px) {
+  .claim_form_container {
+    width: 90vw;
+    padding: 1rem;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .form_row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .text_area textarea {
+    width: 100%;
+  }
+
+  /* Show only mobile button */
+  .desktop_btn {
+    display: none;
+  }
+
+  .mobile_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+    width: 80%;
+    font-size: 1rem;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: #f4e5d8;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }

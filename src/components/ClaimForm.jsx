@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/ClaimForm.css";
-import { FaCalendarAlt } from "react-icons/fa";
+import { CiCalendar } from "react-icons/ci";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function ClaimForm() {
   return (
@@ -22,7 +23,7 @@ export default function ClaimForm() {
           <div className="custom_input">
             <div className="icon_field">
               <input type="text" placeholder="Date of birth*" />
-              <FaCalendarAlt className="field_icon" />
+              <CiCalendar className="field_icon" />
             </div>
           </div>
           <input type="text" placeholder="Job Title *" />
@@ -32,7 +33,7 @@ export default function ClaimForm() {
           <div className="custom_input">
             <div className="icon_field">
               <input type="text" placeholder="Date of Diagnosis *" />
-              <FaCalendarAlt className="field_icon" />
+              <CiCalendar className="field_icon" />
             </div>
           </div>
 
@@ -63,9 +64,18 @@ export default function ClaimForm() {
           </label>
         </div>
 
-        <button className="submit_btn" type="submit">
-          Start your claim now
-        </button>
+        <div className="submit_btn_group">
+  {/* Desktop button */}
+  <button className="submit_btn desktop_btn" type="submit">
+    Start your claim now
+  </button>
+
+  {/* Mobile button */}
+  <button className="submit_btn mobile_btn" type="submit">
+    Submit <IoIosArrowForward />
+  </button>
+</div>
+
       </form>
     </div>
   );

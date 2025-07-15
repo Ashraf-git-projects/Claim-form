@@ -57,7 +57,7 @@
 .contact_btn_wrapper {
   z-index: 3;
   display: flex;
-  gap: 2px;
+  gap: 0.1px;
   align-items: center;
   justify-content: end;
   margin-top: auto;
@@ -78,4 +78,50 @@
 .arrow_btn {
   padding: 0.8rem;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .contact_content {
+    width: 90vw;
+    height: auto;
+    padding: 10px 10px 2px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .contact_content .banner_container {
+    position: static;
+  }
+  .help_text {
+    top: 35px;
+    right: 28px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .circle_badge {
+    width: 14rem;
+    height: 14rem;
+    top: 120px;
+    left: 28%;
+    transform: rotate(15deg);
+  }
+
+  .circle_svg text {
+    font-size: 26px;
+  }
+
+  .contact_btn_wrapper {
+    margin-top: -3.8rem; 
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  gap: 0.1px;
+  }
+
+  .contact_btn,
+  .arrow_btn {
+    justify-content: center;
+  }
 }
