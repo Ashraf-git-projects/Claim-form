@@ -15,12 +15,13 @@
   object-fit:fill;   /* Ensures the image covers entire area without stretching */
   z-index: -1;         /* Sends it to background */
 }
+
 .comp_layout{
-  padding: 50px 150px 40px 150px;
+  padding: 40px 80px;
   display: flex;
-  gap: 20px;
-  
+  justify-content: center;
 }
+
 .lft_part{
   display: flex;
   flex-direction: column;
