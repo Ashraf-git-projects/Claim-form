@@ -11,7 +11,7 @@ function Banner() {
                 <h2>Free <br /> <span className='case'>Case <br /> Review</span></h2>
             </div>
             <div className='list_items'>
-              <ul>
+              <ul style={{listStyle:'none'}}>
                 <li><div className='icn_a'><MdOutlineShield /></div>100% Confidential</li>
                 <li><div className='icn_b'><IoMdCheckmark /></div>No Win, No Fee</li>
                 <li><div className='icn_c'><HiOutlineScale /></div>Free Case Evaluation</li>

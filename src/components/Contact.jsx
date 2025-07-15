@@ -14,7 +14,20 @@ export default function Contact() {
 
       {/* Purple Semi-circle Badge */}
       <div className="circle_badge">
-        <span className="circle_text">ONLY 6 SLOTS LEFT</span>
+       <svg viewBox="0 0 250 230" className="circle_svg">
+  <defs>
+    <path
+      id="textCurve"
+      d="M 125,125 m -100,0 a 100,100 0 1,1 200,0"
+    />
+  </defs>
+  <text fill="#e8d9cc" fontSize="29" fontWeight="bold">
+    <textPath href="#textCurve" startOffset="50%" textAnchor="middle">
+      ONLY 6 SLOTS LEFT
+    </textPath>
+  </text>
+</svg>
+
       </div>
 
       {/* Contact Buttons */}

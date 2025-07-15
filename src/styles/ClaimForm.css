@@ -1,7 +1,7 @@
 .claim_form_container {
-   width: 510px;
+  width: 510px;
   max-width: 700px;
-  height: 38vw; 
+  height: 38vw;
   padding: 2rem;
   background: rgba(18, 53, 110, 0.477);
   backdrop-filter: blur(7px);
@@ -28,23 +28,27 @@
   display: flex;
   gap: 1rem;
 }
-.form_row input{
-color: #fff;
-}
 
 .form_row.full_width {
   flex-direction: column;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   flex: 1;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
   background: transparent;
   color: white;
   font-size: 1rem;
   outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 textarea {
@@ -52,18 +56,39 @@ textarea {
   min-height: 80px;
 }
 
-.icon_input {
-  position: relative;
+.custom_input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   flex: 1;
 }
 
-.icon_input .icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ccc;
-  pointer-events: none;
+.custom_input label {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.icon_field {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-right: 8px;
+}
+
+.icon_field input,
+.icon_field select {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  flex: 1;
+  padding: 10px 0;
+}
+
+.field_icon {
+  color: white;
+  font-size: 1rem;
 }
 
 .checkbox_group {
@@ -72,6 +97,7 @@ textarea {
   gap: 0.7rem;
   font-size: 0.85rem;
   color: #ddd;
+  margin-top: 10px;
 }
 
 .checkbox_group label {
@@ -90,7 +116,7 @@ textarea {
   margin-top: 1rem;
   padding: 1rem;
   width: 100%;
-  background: #fef1e6;
+  background: #e8d9cc;
   color: #000;
   font-weight: bold;
   border: none;
