@@ -1,8 +1,8 @@
 .claim_form_container {
-  width: 510px;
+  width: 450px;
   max-width: 700px;
   height: 652px;
-  padding: 1rem 1rem 0;
+  padding: 0.5rem 1rem 0;
   background: rgba(18, 53, 110, 0.532);
   backdrop-filter: blur(10px);
   border-radius: 25px;
@@ -12,7 +12,7 @@
 }
 
 .form_title {
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom: 1rem;
   font-size: 2.2rem;
   font-weight: lighter;
@@ -66,8 +66,7 @@ textarea::placeholder {
 }
 
 textarea {
-  resize: vertical;
-  width: 32rem;
+  width: 26rem;
 }
 
 .custom_input {
@@ -91,7 +90,6 @@ textarea {
   color: white;
   font-size: 14px;
 }
-
 .checkbox_group {
   margin-top: 1rem;
   display: flex;
@@ -110,8 +108,8 @@ textarea {
 }
 
 .submit_btn {
-  padding: 1rem;
-  margin-top: 2em;
+  padding: 0.8rem 1rem ;
+  margin-top: 1em;
   width: 100%;
   background: #f4e5d8;
   color: #000;
