@@ -89,8 +89,7 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  font-size: 12px;
-  font-weight: lighter;
+  font-size: 0.65rem;
   color: #ddd;
 }
 
@@ -133,7 +132,7 @@ textarea {
 
 .checkbox_group label span {
   display: inline; 
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .icon_field {
